@@ -1,39 +1,34 @@
 import React from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
+import Yelp from '../../util/Yelp';
 
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      businesses : []
+    };
+    this.findYelp = this.findYelp.bind(this);
+  }
 
-function App() {
-  return (
-      <div className="App">
-        <h1 className="montey">YALPER | by: jetsetEats</h1>
-        <SearchBar />
-        <BusinessList businesses={paradeOfBiz} /> 
-      </div>
-    )
+  findYelp(term,location,sortBy) {
+    // console.log(`Querying Yelp for ${term} in ${location} and results sorted by: ${sortBy}`);
+    Yelp.search(term,location,sortBy).then(businesses => {
+        this.setState({businesses:businesses});
+      });
+  }
+
+  render() {
+    return (
+        <div className="App">
+          <h1 className="lobstah">Yalper | <span className="smontey witey">by: jetsetEats</span></h1>
+          <SearchBar findYelp={this.findYelp}/>
+          <BusinessList businesses={this.state.businesses} /> 
+        </div>
+    );
+  }  
 }
-
-const business = {
-  imageSrc: 'https://source.unsplash.com/1SPu0KT-Ejg/1280x720',
-  name: 'Rebellion Cafe',
-  address: '200 Roosevelt Ave',
-  city: 'Woodside',
-  state: 'NY',
-  zipCode: '11377',
-  category: 'Organic Deli',
-  rating: 5.5,
-  reviewCount: 93
-};
-
-const paradeOfBiz = [
-  business, 
-  business,
-  business,
-  business,
-  business,
-  business
-];
 
 export default App;

@@ -38,10 +38,23 @@ input:focus {
   font-family: 'Montserrat', sans-serif;
 }
 
+.smontey {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+.lobstah {
+  font-family: 'Lobster', cursive;
+}
+
 h1 {
   padding: .66rem 0;
   text-align: center;
-  background-color: #1356d1;
+  background-color: #487bdb;
   font-size: 1.8rem;
+  color: black;
+}
+
+.witey {
   color: #fff;
 }
