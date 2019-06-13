@@ -18,7 +18,7 @@ class Business extends React.Component {
         <div className="card-body">
           <h2 className="card-title lobstah">{this.props.business.name}</h2>
           <div>
-            <p>{this.props.business.address}</p>
+            <p>{this.props.business.address1}</p>
             <p>{`${this.props.business.city}, ${this.props.business.state} ${this.props.business.zipCode}`}</p>
             <p className="text-warning font-italic"> {this.props.business.category.toUpperCase()}</p>
             <p><span className="text-danger font-weight-bold">{`${this.props.business.rating}`}</span> stars</p>

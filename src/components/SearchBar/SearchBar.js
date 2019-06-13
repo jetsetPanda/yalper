@@ -1,6 +1,6 @@
 import React from 'react';
 import './SearchBar.css';
-
+// import { SearchOptions } from 
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
@@ -68,6 +68,7 @@ class SearchBar extends React.Component {
     return (
       <div className="SearchBar">
         <div className="SearchBar-sort-options">
+          {/* <SearchChoices /> */}
           <ul>
             {this.renderSortByOptions()}
           </ul>
