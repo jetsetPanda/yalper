@@ -12,16 +12,16 @@ import React from 'react';
 
 class Business extends React.Component {
   render() {
-    return (
+    return ( 
       <div className="card">
         <img className="card-img-top" src={this.props.business.imageSrc} alt='' />
         <div className="card-body">
           <h2 className="card-title lobstah">{this.props.business.name}</h2>
           <div>
-            <p>{this.props.business.address1}</p>
+            <p>{this.props.business.address}</p>
             <p>{`${this.props.business.city}, ${this.props.business.state} ${this.props.business.zipCode}`}</p>
             <p className="text-warning font-italic"> {this.props.business.category.toUpperCase()}</p>
-            <p><span className="text-danger font-weight-bold">{`${this.props.business.rating}`}</span> stars</p>
+            <p><span className="pinky lobstah font-weight-bold">{`${this.props.business.rating}`}</span> stars</p>
             <p>{`${this.props.business.reviewCount} reviews`}</p>
           </div>
         </div>

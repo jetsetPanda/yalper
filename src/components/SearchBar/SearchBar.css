@@ -60,12 +60,14 @@
 
 .SearchBar-submit {
   text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px  rgb(10, 102, 87);
 }
 
 .SearchBar-submit a {
   border-radius: 4px;
   padding: .72rem 1.7rem;
-  background-color: #d16913;
+  background-color: #271404;
   color: #ffffff;
   font-weight: 600;
   transition: background-color .5s;
@@ -73,7 +75,15 @@
 
 .SearchBar-submit a:hover {
   cursor: pointer;
-  background-color: #487bdb;
+  background-color: rgb(21, 177, 151);
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgb(61, 59, 60);
+}
+
+.searchlogo {
+  text-align: center;
+  color: rgb(233, 233, 233);
+  text-shadow: 1px 1px 2px rgb(61, 59, 60);
 }
 
 @media only screen and (max-width: 560px) {

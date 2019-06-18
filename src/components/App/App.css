@@ -8,6 +8,9 @@ html {
   html {
     font-size: 15px;
   }
+  .logo {
+    text-align: center;
+  }
 }
 
 input:focus {
@@ -30,10 +33,6 @@ input:focus {
 
 /* App Styles */
 
-.App {
-  font-family: 'Montserrat', sans-serif;
-}
-
 .montey {
   font-family: 'Montserrat', sans-serif;
 }
@@ -47,12 +46,29 @@ input:focus {
   font-family: 'Lobster', cursive;
 }
 
+.logo {
+  text-align: center;
+  /* padding-left: 2rem; */
+  position: sticky;
+  text-shadow: 1px 1px 2px rgb(10, 102, 87);
+}
+
 h1 {
   padding: .66rem 0;
   text-align: center;
-  background-color: #487bdb;
+  background-color: #2e230d;
   font-size: 1.8rem;
   color: black;
+  margin-bottom: none;
+}
+
+h1.logo {
+  padding: .66rem 0;
+  text-align: center;
+  background-color: #2e230d;
+  font-size: 1.8rem;
+  color: black;
+  position: sticky;
 }
 
 .witey {

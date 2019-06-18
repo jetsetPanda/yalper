@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/yalper/static/css/main.5b02e82a.chunk.css",
+    "main.js": "/yalper/static/js/main.29439a96.chunk.js",
+    "main.js.map": "/yalper/static/js/main.29439a96.chunk.js.map",
+    "runtime~main.js": "/yalper/static/js/runtime~main.c9716126.js",
+    "runtime~main.js.map": "/yalper/static/js/runtime~main.c9716126.js.map",
+    "static/js/2.c8313ccb.chunk.js": "/yalper/static/js/2.c8313ccb.chunk.js",
+    "static/js/2.c8313ccb.chunk.js.map": "/yalper/static/js/2.c8313ccb.chunk.js.map",
+    "index.html": "/yalper/index.html",
+    "precache-manifest.0c2337f43f05472915b3d35149e995b1.js": "/yalper/precache-manifest.0c2337f43f05472915b3d35149e995b1.js",
+    "service-worker.js": "/yalper/service-worker.js",
+    "static/css/main.5b02e82a.chunk.css.map": "/yalper/static/css/main.5b02e82a.chunk.css.map",
+    "static/media/SearchBar.css": "/yalper/static/media/background_search_mobile.cc920fa3.jpg"
+  }
+}

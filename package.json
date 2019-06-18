@@ -1,7 +1,8 @@
 {
-  "name": "ravenous",
+  "name": "yalper",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jetsetpanda.github.io/yalper/",
   "dependencies": {
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
